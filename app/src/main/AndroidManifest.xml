@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atguigu.myownmusicapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <!--
+  唤醒锁定权限 - 如果播放器应用需要防止屏幕变暗或处理器进入休眠状态，或者要使用
+    MediaPlayer.setScreenOnWhilePlaying() 或 MediaPlayer.setWakeMode() 方法，则您必须申请此权限
+    -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.DownloadedActivity" />
+        <activity android:name=".ui.LocalActivity" />
+        <activity android:name=".ui.CommentActivity" />
+        <activity android:name=".ui.MyFavoriteActivity" />
+
+        <activity android:name=".base.SlideBackActivity" />
+        <activity android:name=".ui.PlayerActivity" />
+        <service
+            android:name=".service.refactor.MusicService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ui.PlayListDescActivity" />
+        <activity android:name=".ui.SearchActivity"/>
+        <activity android:name=".ui.SongPlaylistActivity" />
+        <activity android:name=".ui.TopListActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.ProfileActivity" />
+        <activity android:name=".ui.SettingActivity" />
+        <activity android:name=".ui.AboutActivity" />
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

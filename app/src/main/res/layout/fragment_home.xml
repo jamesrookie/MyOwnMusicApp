@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/llTopList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:background="?android:attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/top_list"
+                    app:tint="@color/red"
+                    android:contentDescription="@string/ivTopList" />
+                <TextView
+                    android:id="@+id/tvTopList"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/topList"
+                    android:textColor="@color/textviewColor"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llPlaylistRecommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                >
+                <TextView
+                    android:id="@+id/tvPlaylistRecommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PlaylistRecommend"
+                    android:textColor="@color/textviewColor"
+                    android:layout_marginStart="8dp" />
+                <com.atguigu.myownmusicapp.widget.RecyclerViewAtViewPager2
+                    android:id="@+id/rvPlaylistRecommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/llNewSong">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvNewSong"
+                    android:textColor="@color/textviewColor"
+                    android:layout_marginStart="8dp" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvNewSong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llSentenceRecommend">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvSentenceRecommend"
+                    android:textColor="@color/textviewColor"
+                    android:layout_marginStart="8dp" />
+                <include
+                    android:id="@+id/includeFoyou"
+                    layout="@layout/include_foyou"
+                    android:layout_height="250dp"
+                    android:layout_width="match_parent"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

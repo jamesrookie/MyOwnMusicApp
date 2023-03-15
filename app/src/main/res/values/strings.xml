@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">MyOwnMusicApp</string>
+    <string name="open_drawer">open drawer</string>
+    <string name="ivCover">cover image of each song</string>
+    <string name="ivStartOrPause">control the start or pause of player</string>
+    <string name="ivPlayQueue">list all the played songs</string>
+    <string name="testMarque">这是一首超级超级超级无敌长的一首非常非常好听的音乐</string>
+    <string name="profile">用户简介</string>
+    <string name="changeAccount">切换账号</string>
+    <string name="exit">退出应用</string>
+    <string name="setting">设置</string>
+    <string name="verified">verified</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="my">我的</string>
+    <string name="home">发现</string>
+    <string name="ivSearch">搜索框</string>
+    <string name="topList">排行榜</string>
+    <string name="tvNewSong">新歌速递</string>
+    <string name="PlaylistRecommend">歌单推荐</string>
+    <string name="tvSentenceRecommend">句子推荐</string>
+    <string name="testNewSong">最伟大的作品这一首歌曲的名字非常的长怎么处理求助</string>
+    <string name="testNewSongAuthor">周杰伦作品这一首歌曲的名</string>
+    <string name="ivNewSongCover">新歌的封面</string>
+    <string name="ivTopList">排行榜用图</string>
+    <string name="ivPlayListCover">推荐播放列表的封面</string>
+    <string name="tvPlayListName">2021年度热议新歌TOP50</string>
+    <string name="tvTrackCount">1063万播放量</string>
+    <string name="testSentence">当你能轻松进入的时候，你就该明白：不是你厉害，只是有很多前辈替你解开了重重关卡。</string>
+    <string name="tvAuthor">灰太狼</string>
+    <string name="tvSource">喜羊羊与灰太狼</string>
+    <string name="ivBack">返回键</string>
+    <string name="theDayUpdate">每天更新</string>
+    <string name="ivPlayListCategory">排行榜类别</string>
+    <string name="playlist">歌单</string>
+    <string name="topListDesc">云音乐中每天热度上升最快的100首单曲，每日更新</string>
+    <string name="playAll">播放全部</string>
+    <string name="more">更多选项</string>
+    <string name="search">搜索</string>
+    <string name="openSourceInfo">MyOwnMusic项目仅供学习使用，可通过以下链接watch/star/fork本项目。</string>
+    <string name="FocusOpenSource">关注开源</string>
+    <string name="myGithub">https://github.com/jamesrookie/myownmusic</string>
+    <string name="hotSearch">热门搜素</string>
+    <string name="twenty">20</string>
+    <string name="songName">野狼Disco</string>
+    <string name="tvScore">1542320</string>
+    <string name="local">本地</string>
+    <string name="like">喜欢</string>
+    <string name="history">历史</string>
+    <string name="playCount">%d万次播放</string>
+    <string name="saveCover">保存封面</string>
+    <string name="closeOrClear">关闭或清空</string>
+    <string name="ivGoto">进入该item的详情</string>
+    <string name="ivClear">清空输入框</string>
+    <string name="ivLyricsBackground">歌词背景</string>
+    <string name="ivVolume">音量键</string>
+    <string name="ivMode">播放模式</string>
+    <string name="ivPrev">前一首</string>
+    <string name="ivPlay">开始播放或暂停</string>
+    <string name="ivNext">下一首</string>
+    <string name="ivPlayList">播放列表</string>
+    <string name="zero">00:00</string>
+    <string name="ivMore">更多</string>
+    <string name="ivComment">查看精彩评论</string>
+    <string name="ivFavorite">添加到“最爱”</string>
+    <string name="ivTranslation">翻译</string>
+    <string name="miGu">咪咕</string>
+    <string name="netEase">网易云</string>
+    <string name="tvSearchEngine">引擎:</string>
+    <string name="playlistNumber">播放列表(%d首)</string>
+    <string name="tvPlayCircle">循环播放</string>
+    <string name="tvCollectAll">收藏全部</string>
+    <string name="ivDeleteALl">删除全部</string>
+    <string name="alertDialogDeleteAll">确定要清空播放列表？</string>
+    <string name="cancel">取消</string>
+    <string name="clearAll">清空</string>
+    <string name="playModeNormal">列表循环</string>
+    <string name="playModeSingle">单曲循环</string>
+    <string name="playModeRandom">随机播放</string>
+    <string name="miGu2">咪咕2号</string>
+    <string name="KuWo">酷我</string>
+    <string name="KuGou">酷狗</string>
+    <string name="myFavorite">我喜欢的音乐</string>
+    <string name="myFavoriteDesc">收藏你喜欢的本地、网易云、咪咕等音乐</string>
+    <string name="please_insert_songs">请添加一些歌曲!</string>
+    <string name="insert_success">收藏成功，可在♥的音乐中查看</string>
+    <string name="nextPlay">添加到下一首播放</string>
+    <string name="addToFavorite">添加到本地收藏</string>
+    <string name="addToNetEaseFavorite">添加到网易云收藏</string>
+    <string name="songComment">添加评论</string>
+    <string name="songInfo">歌曲信息</string>
+    <string name="deleteSong">从歌单中移除</string>
+    <string name="songId">歌曲id</string>
+    <string name="songSource">歌曲来源</string>
+    <string name="songImgUrl">歌曲封面链接</string>
+    <string name="songUrl">歌曲下载链接(不保证时效性)</string>
+    <string name="Local">本地音乐</string>
+    <string name="localDesc">扫描本地音乐</string>
+    <string name="downloadedMusic">已下载的音乐</string>
+    <string name="downloadedDesc">包含歌词和专辑封面，可滑动删除</string>
+    <string name="testText">编辑推荐榜VOL35 梦幻联动 黄老板助阵Sam Smith新作</string>
+    <string name="disc">disc</string>
+    <string name="needle">needle</string>
+    <string name="download">下载</string>
+    <string name="alertDialogDelete">确定删除所选音乐的本地文件吗(如果在❤歌单，那么也会从中移除)?</string>
+    <string name="delete">删除</string>
+    <string name="notificationPlay">播放</string>
+    <string name="notificationPause">暂停</string>
+    <string name="notificationNext">下一首</string>
+    <string name="notificationPrev">上一首</string>
+    <string name="phoneLogin">手机号登录</string>
+    <string name="phoneNumber">手机号</string>
+    <string name="btnNext">下一步</string>
+    <string name="phoneInputHint">请输入您的手机号</string>
+    <string name="inputPwd">密码</string>
+    <string name="btnLogin">登录</string>
+    <string name="pwdInputHint">请输入您的密码</string>
+    <string name="pleaseSaveAndScanQrCode">请先保存到相册然后打开网易云音乐扫码授权登录</string>
+    <string name="saveToGallery">保存至相册</string>
+    <string name="qrCode">二维码</string>
+    <string name="userNameExample">这是我的用户名</string>
+    <string name="userId">用户id</string>
+    <string name="accountCreateTime">账号创建时间</string>
+    <string name="userType">用户类型</string>
+    <string name="interestingComments">精彩评论</string>
+    <string name="writeComment">写评论</string>
+    <string name="sendComments">发送</string>
+    <string name="ivThumbUp">点赞</string>
+    <string name="about">关于</string>
+    <string name="aboutIntroduction">
+        1、界面设计参考:\n
+        https://github.com/Moriafly/DsoMusic/tree/master/app\n
+        2、音频框架MediaSession参考:\n
+        https://www.bilibili.com/video/BV1gR4y147fp/\n
+        3、唱片旋转参考:\n
+        https://www.imooc.com/learn/1104\n
+    </string>
+    <string name="refer">本项目参考借鉴的项目</string>
+    <string name="refer2">本项目中用到的框架</string>
+    <string name="aboutIntroduction2">
+        1、Retrofit2\n
+        2、Room库\n
+        3、GlideView\n
+        4、viewpager2\n
+        5、Gson\n
+        6、j2v8\n
+        7、EventBus\n
+        8、LyricViewX\n
+        9、blurView\n
+        10、Paging3
+    </string>
+    <string name="logout">退出登录</string>
+    <string name="qq">QQ</string>
+</resources>

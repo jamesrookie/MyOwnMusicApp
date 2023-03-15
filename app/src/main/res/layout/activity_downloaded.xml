@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SongPlaylistActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/clPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/miniPlayer"
+        app:layout_constraintTop_toBottomOf="@id/titleBar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/ablPlayList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransparent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvCover"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivListCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/topListDesc"
+                        android:src="@drawable/ic_launcher_background" />
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:id="@+id/viewSupporter"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:background="@color/yellow"
+                    app:layout_constraintBottom_toBottomOf="@+id/cvCover"
+                    app:layout_constraintEnd_toEndOf="@id/cvCover"
+                    app:layout_constraintStart_toStartOf="@id/cvCover"
+                    app:layout_constraintTop_toTopOf="@id/cvCover" />
+
+                <TextView
+                    android:id="@+id/tvPlayListName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/downloadedMusic"
+                    android:textColor="@color/textviewColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/viewSupporter"
+                    app:layout_constraintStart_toEndOf="@id/cvCover" />
+
+                <TextView
+                    android:id="@+id/tvPlayListDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/downloadedDesc"
+                    app:layout_constraintLeft_toRightOf="@id/cvCover"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/viewSupporter" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/clPlayAll"
+                android:background="@drawable/bg_slide_layout">
+
+                <TextView
+                    android:id="@+id/tvPlayAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/playAll"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textviewColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/ivPlayAll"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivPlayAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:contentDescription="@string/playAll"
+                    android:src="@drawable/ic_play_second"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/red" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSongPlayList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clPlayList"
+            app:layout_constraintBottom_toTopOf="@id/miniPlayer"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.atguigu.myownmusicapp.widget.TitleBarLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/design_default_color_primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:text="@string/playlist">
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_search"
+            android:contentDescription="@string/ivSearch"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@color/white" />
+    </com.atguigu.myownmusicapp.widget.TitleBarLayout>
+
+    <include
+        android:id="@+id/miniPlayer"
+        layout="@layout/mini_player"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

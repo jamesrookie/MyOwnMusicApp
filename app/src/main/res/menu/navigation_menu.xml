@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuProfile"
+        android:title="@string/profile"
+        android:icon="@drawable/profile"
+        />
+    <item
+        android:id="@+id/menuSetting"
+        android:title="@string/setting"
+        android:icon="@drawable/setting"/>
+    <item
+        android:id="@+id/menuAbout"
+        android:title="@string/about"
+        android:icon="@drawable/about"
+        />
+    <item
+        android:id="@+id/menuChangeAccount"
+        android:title="@string/changeAccount"
+        android:icon="@drawable/change_account"/>
+    <item
+        android:id="@+id/menuExit"
+        android:title="@string/exit"
+        android:icon="@drawable/exit"/>
+</menu>

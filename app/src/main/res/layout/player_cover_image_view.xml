@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flCover"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+<!--    光盘-->
+    <ImageView
+        android:id="@+id/ivDisc"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:src="@drawable/disc"
+        />
+<!--    专辑封面-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivCover"
+        android:layout_width="215dp"
+        android:layout_height="215dp"
+        android:layout_gravity="center"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+</FrameLayout>

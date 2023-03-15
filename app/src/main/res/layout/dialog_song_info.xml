@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+    <com.atguigu.myownmusicapp.widget.KeyValueView
+        android:id="@+id/kvId"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:text="@string/songId"
+        />
+    <com.atguigu.myownmusicapp.widget.KeyValueView
+        android:id="@+id/kvSource"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:text="@string/songSource"
+        />
+    <com.atguigu.myownmusicapp.widget.KeyValueView
+        android:id="@+id/kvImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text="@string/songImgUrl"
+        />
+    <com.atguigu.myownmusicapp.widget.KeyValueView
+        android:id="@+id/kvSongUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text="@string/songUrl"
+        />
+
+</LinearLayout>
